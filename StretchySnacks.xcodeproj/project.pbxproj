@@ -12,6 +12,11 @@
 		E2F7FBE71DFA0ACE00B6FB4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F7FBE51DFA0ACE00B6FB4A /* Main.storyboard */; };
 		E2F7FBE91DFA0ACE00B6FB4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F7FBE81DFA0ACE00B6FB4A /* Assets.xcassets */; };
 		E2F7FBEC1DFA0ACE00B6FB4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F7FBEA1DFA0ACE00B6FB4A /* LaunchScreen.storyboard */; };
+		E2F7FBF41DFA213D00B6FB4A /* oreos.png in Resources */ = {isa = PBXBuildFile; fileRef = E2F7FBF31DFA213D00B6FB4A /* oreos.png */; };
+		E2F7FBF61DFA214400B6FB4A /* pizza_pockets.png in Resources */ = {isa = PBXBuildFile; fileRef = E2F7FBF51DFA214400B6FB4A /* pizza_pockets.png */; };
+		E2F7FBF81DFA214D00B6FB4A /* pop_tarts.png in Resources */ = {isa = PBXBuildFile; fileRef = E2F7FBF71DFA214D00B6FB4A /* pop_tarts.png */; };
+		E2F7FBFA1DFA215400B6FB4A /* popsicle.png in Resources */ = {isa = PBXBuildFile; fileRef = E2F7FBF91DFA215400B6FB4A /* popsicle.png */; };
+		E2F7FBFC1DFA215B00B6FB4A /* ramen.png in Resources */ = {isa = PBXBuildFile; fileRef = E2F7FBFB1DFA215B00B6FB4A /* ramen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		E2F7FBE81DFA0ACE00B6FB4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2F7FBEB1DFA0ACE00B6FB4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2F7FBED1DFA0ACE00B6FB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2F7FBF31DFA213D00B6FB4A /* oreos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oreos.png; sourceTree = "<group>"; };
+		E2F7FBF51DFA214400B6FB4A /* pizza_pockets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizza_pockets.png; sourceTree = "<group>"; };
+		E2F7FBF71DFA214D00B6FB4A /* pop_tarts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pop_tarts.png; sourceTree = "<group>"; };
+		E2F7FBF91DFA215400B6FB4A /* popsicle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popsicle.png; sourceTree = "<group>"; };
+		E2F7FBFB1DFA215B00B6FB4A /* ramen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ramen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				E2F7FBE81DFA0ACE00B6FB4A /* Assets.xcassets */,
 				E2F7FBEA1DFA0ACE00B6FB4A /* LaunchScreen.storyboard */,
 				E2F7FBED1DFA0ACE00B6FB4A /* Info.plist */,
+				E2F7FBFB1DFA215B00B6FB4A /* ramen.png */,
+				E2F7FBF31DFA213D00B6FB4A /* oreos.png */,
+				E2F7FBF71DFA214D00B6FB4A /* pop_tarts.png */,
+				E2F7FBF51DFA214400B6FB4A /* pizza_pockets.png */,
+				E2F7FBF91DFA215400B6FB4A /* popsicle.png */,
 			);
 			path = StretchySnacks;
 			sourceTree = "<group>";
@@ -96,6 +111,7 @@
 				TargetAttributes = {
 					E2F7FBDD1DFA0ACD00B6FB4A = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = JNQLRNGEA7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,9 +139,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F7FBF41DFA213D00B6FB4A /* oreos.png in Resources */,
 				E2F7FBEC1DFA0ACE00B6FB4A /* LaunchScreen.storyboard in Resources */,
+				E2F7FBFA1DFA215400B6FB4A /* popsicle.png in Resources */,
+				E2F7FBF81DFA214D00B6FB4A /* pop_tarts.png in Resources */,
+				E2F7FBF61DFA214400B6FB4A /* pizza_pockets.png in Resources */,
 				E2F7FBE91DFA0ACE00B6FB4A /* Assets.xcassets in Resources */,
 				E2F7FBE71DFA0ACE00B6FB4A /* Main.storyboard in Resources */,
+				E2F7FBFC1DFA215B00B6FB4A /* ramen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JNQLRNGEA7;
 				INFOPLIST_FILE = StretchySnacks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LHL.StretchySnacks;
@@ -270,6 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JNQLRNGEA7;
 				INFOPLIST_FILE = StretchySnacks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LHL.StretchySnacks;

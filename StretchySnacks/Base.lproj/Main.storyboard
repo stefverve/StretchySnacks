@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StretchySnacks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +22,82 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6c-pC-dVE">
+                                <rect key="frame" x="-0.5" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUQ-Ga-c2X">
+                                        <rect key="frame" x="316" y="8" width="51" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="PUQ-Ga-c2X" secondAttribute="height" multiplier="1:1" id="6XQ-3T-9zN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="＋"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DYs-Bd-3bo"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3O-4I-hZP">
+                                        <rect key="frame" x="0.0" y="64" width="375" height="0.0"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oreos.png" translatesAutoresizingMaskIntoConstraints="NO" id="OGR-fe-Aml">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="0.0"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza_pockets.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y1d-GI-Neq">
+                                                <rect key="frame" x="75" y="0.0" width="75" height="0.0"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pop_tarts.png" translatesAutoresizingMaskIntoConstraints="NO" id="rO4-ak-e0I">
+                                                <rect key="frame" x="150" y="0.0" width="75" height="0.0"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popsicle.png" translatesAutoresizingMaskIntoConstraints="NO" id="kSu-3a-Ous">
+                                                <rect key="frame" x="225" y="0.0" width="75" height="0.0"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ramen.png" translatesAutoresizingMaskIntoConstraints="NO" id="95C-il-gqx">
+                                                <rect key="frame" x="300" y="0.0" width="75" height="0.0"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Y1d-GI-Neq" firstAttribute="width" secondItem="rO4-ak-e0I" secondAttribute="width" id="0b2-2a-BFW"/>
+                                            <constraint firstItem="rO4-ak-e0I" firstAttribute="width" secondItem="kSu-3a-Ous" secondAttribute="width" id="9FB-ch-zt7"/>
+                                            <constraint firstItem="OGR-fe-Aml" firstAttribute="width" secondItem="Y1d-GI-Neq" secondAttribute="width" id="fY2-17-LPx"/>
+                                            <constraint firstItem="kSu-3a-Ous" firstAttribute="width" secondItem="95C-il-gqx" secondAttribute="width" id="tph-4l-ZBU"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="PUQ-Ga-c2X" firstAttribute="top" secondItem="C6c-pC-dVE" secondAttribute="topMargin" id="61i-ye-8cS"/>
+                                    <constraint firstItem="PUQ-Ga-c2X" firstAttribute="trailing" secondItem="C6c-pC-dVE" secondAttribute="trailingMargin" id="FXF-ng-h55"/>
+                                    <constraint firstItem="n3O-4I-hZP" firstAttribute="height" secondItem="C6c-pC-dVE" secondAttribute="height" constant="-64" id="GEZ-QU-q45"/>
+                                    <constraint firstItem="n3O-4I-hZP" firstAttribute="width" secondItem="C6c-pC-dVE" secondAttribute="width" id="VlV-w9-KDW"/>
+                                    <constraint firstItem="n3O-4I-hZP" firstAttribute="top" secondItem="C6c-pC-dVE" secondAttribute="top" constant="64" id="aVo-1g-srZ"/>
+                                    <constraint firstAttribute="height" constant="64" id="guV-8S-a7b"/>
+                                    <constraint firstItem="n3O-4I-hZP" firstAttribute="centerX" secondItem="C6c-pC-dVE" secondAttribute="centerX" id="ymm-7N-W3F"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="C6c-pC-dVE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="RW8-w5-JBD"/>
+                            <constraint firstItem="C6c-pC-dVE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r1y-qU-3au"/>
+                            <constraint firstItem="C6c-pC-dVE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="ykT-if-Ohi"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="navBarHeight" destination="guV-8S-a7b" id="Ga3-Hv-2rY"/>
+                        <outlet property="snackButton" destination="PUQ-Ga-c2X" id="qp5-Ap-8ll"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="84.107946026986511"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="oreos.png" width="473" height="514"/>
+        <image name="pizza_pockets.png" width="298" height="285"/>
+        <image name="pop_tarts.png" width="299" height="299"/>
+        <image name="popsicle.png" width="300" height="300"/>
+        <image name="ramen.png" width="249" height="252"/>
+    </resources>
 </document>
